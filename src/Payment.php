@@ -443,7 +443,7 @@ class Payment {
 		}
 		$this->description = Strings::shorten($this->description, 240, "...");
 
-		$this->customerId = Strings::shorten($this->customerId, 50, "", true, true);
+		$this->customerId = null !== $this->customerId ? Strings::shorten($this->customerId, 50, "", true, true) : null;
 
 		if (!$this->cart) {
 			throw new Exception("Cart is empty. Please add one or two items into cart using addCartItem() method.");

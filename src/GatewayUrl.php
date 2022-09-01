@@ -7,9 +7,9 @@ namespace OndraKoupil\Csob;
  */
 class GatewayUrl {
 
-	const TEST_LATEST = self::TEST_1_8;
+	const TEST_LATEST = self::TEST_1_9;
 
-	const PRODUCTION_LATEST = self::PRODUCTION_1_8;
+	const PRODUCTION_LATEST = self::PRODUCTION_1_9;
 
 	const TEST_1_0 = "https://iapi.iplatebnibrana.csob.cz/api/v1";
 
@@ -31,4 +31,7 @@ class GatewayUrl {
 
 	const PRODUCTION_1_8 = "https://api.platebnibrana.csob.cz/api/v1.8";
 
+    const TEST_1_9 = "https://iapi.iplatebnibrana.csob.cz/api/v1.9";
+
+    const PRODUCTION_1_9 = "https://api.platebnibrana.csob.cz/api/v1.9";
 }
